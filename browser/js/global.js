@@ -1,6 +1,11 @@
 /* -*- js-indent-level: 8 -*- */
 /* global Uint8Array */
 
+window.processCoolUrl = function(opts) {
+	console.log('>>> url: %s, \n-> type: %s', opts.url, opts.type);
+	return opts.url;
+}
+
 window.app = { // Shouldn't have any functions defined.
 	definitions: {}, // Class instances are created using definitions under this variable.
 	dpiScale: window.devicePixelRatio,
@@ -695,6 +700,10 @@ window.app = { // Shouldn't have any functions defined.
 	}
 
 	global.createWebSocket = function(uri) {
+		if ('processCoolUrl' in window) {
+			uri = window.processCoolUrl({ url: uri, type: 'ws' });
+		}
+
 		if (global.socketProxy) {
 			window.socketProxy = true;
 			return new global.ProxySocket(uri);
@@ -791,6 +800,7 @@ window.app = { // Shouldn't have any functions defined.
 	// Form a valid HTTP URL to the host with the given path.
 	global.makeHttpUrl = function (path) {
 		console.assert(global.webserver.startsWith('http'), 'webserver is not http: ' + global.webserver);
+
 		return global.webserver + global.serviceRoot + path;
 	};
 
