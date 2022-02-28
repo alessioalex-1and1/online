@@ -306,8 +306,7 @@ L.Control.Menubar = L.Control.extend({
 				{name: _('Latest Updates'), id: 'latestupdates', type: 'action', iosapp: false},
 				{name: _('Send Feedback'), id: 'feedback', type: 'action'},
 				{name: _('About'), id: 'about', type: 'action'}]
-			},
-			{name: _('Last modification'), id: 'last-mod', type: 'action', tablet: false}
+			}
 		],
 
 		presentation: [
@@ -435,8 +434,7 @@ L.Control.Menubar = L.Control.extend({
 				{name: _('Latest Updates'), id: 'latestupdates', type: 'action', iosapp: false},
 				{name: _('Send Feedback'), id: 'feedback', type: 'action'},
 				{name: _('About'), id: 'about', type: 'action'}]
-			},
-			{name: _('Last modification'), id: 'last-mod', type: 'action', tablet: false}
+			}
 		],
 
 		drawing: [
@@ -546,8 +544,7 @@ L.Control.Menubar = L.Control.extend({
 				{name: _('Latest Updates'), id: 'latestupdates', type: 'action', iosapp: false},
 				{name: _('Send Feedback'), id: 'feedback', type: 'action'},
 				{name: _('About'), id: 'about', type: 'action'}]
-			},
-			{name: _('Last modification'), id: 'last-mod', type: 'action', tablet: false}
+			}
 		],
 
 		spreadsheet: [
@@ -759,8 +756,7 @@ L.Control.Menubar = L.Control.extend({
 				{name: _('Latest Updates'), id: 'latestupdates', type: 'action', iosapp: false},
 				{name: _('Send Feedback'), id: 'feedback', type: 'action'},
 				{name: _('About'), id: 'about', type: 'action'}]
-			},
-			{name: _('Last modification'), id: 'last-mod', type: 'action', tablet: false}
+			}
 		],
 
 		mobiletext:  [
